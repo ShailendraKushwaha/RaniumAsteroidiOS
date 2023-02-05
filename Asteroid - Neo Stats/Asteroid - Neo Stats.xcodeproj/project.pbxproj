@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F1F0C90D298FC5E00023155B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F0C90C298FC5E00023155B /* AppDelegate.swift */; };
 		F1F0C911298FC5E00023155B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F0C910298FC5E00023155B /* ViewController.swift */; };
-		F1F0C914298FC5E00023155B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F0C912298FC5E00023155B /* Main.storyboard */; };
 		F1F0C916298FC5E20023155B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F0C915298FC5E20023155B /* Assets.xcassets */; };
 		F1F0C919298FC5E20023155B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F0C917298FC5E20023155B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,7 +17,6 @@
 		F1F0C909298FC5E00023155B /* Asteroid - Neo Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Asteroid - Neo Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F0C90C298FC5E00023155B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1F0C910298FC5E00023155B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F1F0C913298FC5E00023155B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1F0C915298FC5E20023155B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1F0C918298FC5E20023155B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1F0C91A298FC5E20023155B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,7 +54,6 @@
 			children = (
 				F1F0C90C298FC5E00023155B /* AppDelegate.swift */,
 				F1F0C910298FC5E00023155B /* ViewController.swift */,
-				F1F0C912298FC5E00023155B /* Main.storyboard */,
 				F1F0C915298FC5E20023155B /* Assets.xcassets */,
 				F1F0C917298FC5E20023155B /* LaunchScreen.storyboard */,
 				F1F0C91A298FC5E20023155B /* Info.plist */,
@@ -124,7 +121,6 @@
 			files = (
 				F1F0C919298FC5E20023155B /* LaunchScreen.storyboard in Resources */,
 				F1F0C916298FC5E20023155B /* Assets.xcassets in Resources */,
-				F1F0C914298FC5E00023155B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,14 +139,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F1F0C912298FC5E00023155B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F1F0C913298FC5E00023155B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F1F0C917298FC5E20023155B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,7 +275,6 @@
 				INFOPLIST_FILE = "Asteroid - Neo Stats/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -314,7 +301,6 @@
 				INFOPLIST_FILE = "Asteroid - Neo Stats/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
