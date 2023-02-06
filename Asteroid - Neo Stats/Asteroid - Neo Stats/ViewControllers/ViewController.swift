@@ -123,14 +123,18 @@ private extension ViewController {
         APIHandler.sharedInstance.getAPI(params: params, endPoint: .feed, onSuccess: {[weak self] data,dictionary  in
             do {
                 guard let `self` else { return }
-                print(dictionary)
+                
+                if let errorMessage = dictionary["error_message"] as? String {
+                    self.showAlert(message: errorMessage)
+                    return
+                }
                 self.asteroidInfo  = try JSONDecoder().decode(AsteroidInfo.self, from: data)
                 self.getFastestAsteroid()
             } catch {
                 print(error)
             }
         }, onFailure: {error in
-           print(error)
+            self.showAlert(message: error.localizedDescription)
         })
     }
     
@@ -180,6 +184,16 @@ private extension ViewController {
         }
         
         return sortedAsteroids[ sortedAsteroids.count - 1]
+    }
+    
+    func showAlert(message:String){
+        let alertController = UIAlertController(title: "", message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default,handler: { action in
+            alertController.dismiss(animated: true)
+        }))
+        alertController.modalTransitionStyle = .crossDissolve
+        alertController.modalPresentationStyle = .fullScreen
+        self.present(alertController, animated: true)
     }
     
 //    MARK: tableView Helper functions
