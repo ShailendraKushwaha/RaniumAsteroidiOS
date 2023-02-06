@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F113F3302990119D00F44CA8 /* ChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F113F32F2990119D00F44CA8 /* ChartCell.swift */; };
+		F13243422990CBA30001F9B6 /* DateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13243412990CBA30001F9B6 /* DateTextField.swift */; };
+		F13243442990E0500001F9B6 /* BasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13243432990E0500001F9B6 /* BasicCell.swift */; };
 		F1EDD7DD298FD10D00F60E78 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EDD7DC298FD10D00F60E78 /* APIHandler.swift */; };
 		F1EDD7DF298FD1E200F60E78 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EDD7DE298FD1E200F60E78 /* APIConstants.swift */; };
 		F1EDD7E2298FD74600F60E78 /* AsteroidInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EDD7E1298FD74600F60E78 /* AsteroidInfo.swift */; };
@@ -20,6 +23,9 @@
 /* Begin PBXFileReference section */
 		1612B27122804518EA55FA17 /* Pods-Asteroid - Neo Stats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asteroid - Neo Stats.debug.xcconfig"; path = "Target Support Files/Pods-Asteroid - Neo Stats/Pods-Asteroid - Neo Stats.debug.xcconfig"; sourceTree = "<group>"; };
 		F066EEC3603515DF16B90C21 /* Pods-Asteroid - Neo Stats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Asteroid - Neo Stats.release.xcconfig"; path = "Target Support Files/Pods-Asteroid - Neo Stats/Pods-Asteroid - Neo Stats.release.xcconfig"; sourceTree = "<group>"; };
+		F113F32F2990119D00F44CA8 /* ChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCell.swift; sourceTree = "<group>"; };
+		F13243412990CBA30001F9B6 /* DateTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTextField.swift; sourceTree = "<group>"; };
+		F13243432990E0500001F9B6 /* BasicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCell.swift; sourceTree = "<group>"; };
 		F1EDD7DC298FD10D00F60E78 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		F1EDD7DE298FD1E200F60E78 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		F1EDD7E1298FD74600F60E78 /* AsteroidInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidInfo.swift; sourceTree = "<group>"; };
@@ -29,7 +35,7 @@
 		F1F0C915298FC5E20023155B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1F0C918298FC5E20023155B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1F0C91A298FC5E20023155B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB151BD928C530212A8BBD5D /* Pods_Asteroid___Neo_Stats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Asteroid___Neo_Stats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB151BD928C530212A8BBD5D /* Pods_Asteroid___Neo_Stats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Asteroid___Neo_Stats.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +56,6 @@
 				1612B27122804518EA55FA17 /* Pods-Asteroid - Neo Stats.debug.xcconfig */,
 				F066EEC3603515DF16B90C21 /* Pods-Asteroid - Neo Stats.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -60,6 +65,33 @@
 				FB151BD928C530212A8BBD5D /* Pods_Asteroid___Neo_Stats.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F113F32D2990115E00F44CA8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F13243402990CB5A0001F9B6 /* Views */,
+				F113F32E2990117F00F44CA8 /* Cells */,
+				F1F0C910298FC5E00023155B /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F113F32E2990117F00F44CA8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F113F32F2990119D00F44CA8 /* ChartCell.swift */,
+				F13243432990E0500001F9B6 /* BasicCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F13243402990CB5A0001F9B6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F13243412990CBA30001F9B6 /* DateTextField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F1EDD7DB298FD0CD00F60E78 /* APIHandler */ = {
@@ -100,10 +132,10 @@
 		F1F0C90B298FC5E00023155B /* Asteroid - Neo Stats */ = {
 			isa = PBXGroup;
 			children = (
+				F113F32D2990115E00F44CA8 /* ViewControllers */,
 				F1EDD7E0298FD71D00F60E78 /* Model */,
 				F1EDD7DB298FD0CD00F60E78 /* APIHandler */,
 				F1F0C90C298FC5E00023155B /* AppDelegate.swift */,
-				F1F0C910298FC5E00023155B /* ViewController.swift */,
 				F1F0C915298FC5E20023155B /* Assets.xcassets */,
 				F1F0C917298FC5E20023155B /* LaunchScreen.storyboard */,
 				F1F0C91A298FC5E20023155B /* Info.plist */,
@@ -225,8 +257,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F113F3302990119D00F44CA8 /* ChartCell.swift in Sources */,
 				F1EDD7DF298FD1E200F60E78 /* APIConstants.swift in Sources */,
 				F1EDD7DD298FD10D00F60E78 /* APIHandler.swift in Sources */,
+				F13243422990CBA30001F9B6 /* DateTextField.swift in Sources */,
+				F13243442990E0500001F9B6 /* BasicCell.swift in Sources */,
 				F1F0C911298FC5E00023155B /* ViewController.swift in Sources */,
 				F1F0C90D298FC5E00023155B /* AppDelegate.swift in Sources */,
 				F1EDD7E2298FD74600F60E78 /* AsteroidInfo.swift in Sources */,
